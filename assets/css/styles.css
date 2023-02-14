@@ -1,0 +1,167 @@
+:root {
+  --main-bg-color: #431C60;
+  --button-bg-color: #7B1FA2;
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #AAB5E0;
+  --button: #4527A0;
+  /* --gradient-bg-color: ; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.banner {
+  background-color: #000;
+}
+
+
+main {
+  background-color: var(--main-bg-color);
+  padding: 20px 28px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__header h4 {
+  color: var(--secondary-text-color);
+}
+
+.card__header button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: var(--primary-text-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--button-bg-color);
+}
+
+.card__image {
+  width: 100%;
+  height: 300px;
+
+  background-image: url("../img/dog.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+
+  position: relative;
+}
+
+.card--blur {
+  width: 100%;
+  height: 90px;
+  color: var(--primary-text-color);
+  padding: 10px 20px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  bottom: 0;
+}
+
+.card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.card__title h3 {
+  padding: 0;
+  margin: 0;
+
+  font-size: 24px;
+}
+
+.card__title span {
+  border: 0;
+  padding: 5px 9px;
+  background: linear-gradient(45deg, #4527A0, #7B1FA2);
+}
+
+.card__sidebar, .simulation__sidebar {
+  height: 1px;
+  margin: 12px 0;
+
+  background-color: var(--primary-text-color);
+}
+
+
+
+
+.plans__simulation {
+  background: linear-gradient(45deg, #4527A0, #7B1FA2);
+  padding: 6px 20px;
+}
+
+.simulation__form {
+  width: 100%;
+  margin: auto;
+  padding-top: 18px;
+}
+
+.simulation__form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 8px;
+
+  border-radius: 3px;
+  border: 0;
+  outline: none;
+}
+
+.simulation__transports {
+  color: var(--primary-text-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simulation__transport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.simulation__transport div {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  background-color: red;
+}
+
+.simulation__transport img {
+  width: 36px;
+  height: 36px;
+}
+
+.simulation__transport span {
+  text-transform: uppercase;
+  text-align: center;
+}

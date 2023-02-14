@@ -11,6 +11,84 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <div class="banner"></div>
+
+    <main class="plans">
+      <div class="card">
+        <div class="card__header">
+          <h4>Your Plans</h4>
+          <button>+</button>
+        </div>
+        <div class="card__image">
+          <div class="card--blur">
+            <div class="card__title">
+              <h3>The James Hotel</h3>
+              <span>4 nights</span>
+            </div>
+            <div class="card__sidebar"></div>
+            <div class="card__location">
+              <span>36 W 38th St,New York,NY 10018</span>
+              <span class="card__icon"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image">
+          <div class="card--blur">
+            <div class="card__title">
+              <h3>The James Hotel</h3>
+            </div>
+            <div class="card__sidebar"></div>
+            <div class="card__location">
+              <span>Thursday 4th Jan at 09.15</span>
+              <span class="card__icon"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plans__simulation">
+        <div class="simulation__form">
+          <input type="text" name="from" id="from" placeholder="From" />
+          <input type="text" name="to" id="to" placeholder="To" />
+        </div>
+
+        <div class="simulation__sidebar"></div>
+
+        <div class="simulation__transports">
+          <div class="simulation__transport simulation__taxi">
+            <div>
+              <img src="./assets/img/taxi.png" alt="" />
+            </div>
+            <span>taxi</span>
+          </div>
+
+          <div class="simulation__transport simulation__subway">
+            <div>
+              <img src="./assets/img/taxi.png" alt="" />
+            </div>
+            <span>subway</span>
+          </div>
+
+          <div class="simulation__transport simulation__subway">
+            <div>
+              <img src="./assets/img/taxi.png" alt="" />
+            </div>
+            <span>uber</span>
+          </div>
+
+          <div class="simulation__transport simulation__subway">
+            <div>
+              <img src="./assets/img/taxi.png" alt="" />
+            </div>
+            <span>uber</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
