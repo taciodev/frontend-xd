@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Frontend XD</title>
 
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -37,7 +37,7 @@
             <h2>lhr</h2>
             <span>New York, USA</span>
           </div>
-          <div class="boardings__sidebar"></div>
+          <div class="boardings__separator"></div>
           <div class="boardings__details">
             <div>
               <span>Flight</span>
@@ -55,78 +55,90 @@
               <span>Departs</span>
               <p>10.25</p>
             </div>
-            <button>View boarding pass</button>
+            <button class="boardings-button">View boarding pass</button>
           </div>
         </div>
       </div>
 
       <section class="plans">
-        <div class="plans__card">
-          <div class="card__header">
-            <h4>Your Plans</h4>
-            <button>+</button>
-          </div>
-          <div class="card__image">
-            <div class="card--blur">
-              <div class="card__title">
+        <div class="plans-header">
+          <h4 class="plans-header__title">Your Plans</h4>
+          <button class="plans-header__button">+</button>
+        </div>
+
+        <div class="accommodation">
+          <div class="accommodation__img">
+            <div class="accommodation--blur">
+              <div class="accommodation__title">
                 <h3>The James Hotel</h3>
                 <span>4 nights</span>
               </div>
-              <div class="card__sidebar"></div>
-              <div class="card__location">
+              <div class="accommodation__separator"></div>
+              <div class="accommodation__location">
                 <span>36 W 38th St,New York,NY 10018</span>
-                <span class="card__icon"></span>
+                <span class="accommodation__icon"></span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="plans__visits">
-          <div class="visits__image">
-            <div class="visits--blur">
-              <div class="visits__title">
+        <div class="places-visit">
+          <div class="places-visit__img">
+            <div class="places-visit--blur">
+              <div class="places-visit__title">
                 <h3>Lady Liberty Tour</h3>
               </div>
-              <div class="visits__sidebar"></div>
-              <div class="visits__location">
+              <div class="places-visit__separator"></div>
+              <div class="places-visit__location">
                 <span>Thursday 4th Jan at 09.15</span>
-                <span class="visits__icon"></span>
+                <span class="places-visit__icon"></span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="plans__timeline">
-          <div class="timeline__image">
-            <div class="timeline--opacity">
-              <div class="timeline__details">
-                <div class="timeline__person"></div>
+        <div class="planning">
+          <div class="planning__img">
+            <div class="planning__img--opacity">
+              <div class="planning__details">
+                <div class="planning__person"></div>
                 <p>
                   Ryan from Corey Car Services is confirmed for pickup at
                   <span>15.40</span>.
                 </p>
               </div>
 
-              <div class="timeline__area">
-                <div class="timeline__item match">
+              <div class="timeline">
+                <div class="timeline__item timeline__item--match">
                   <div>
-                    <h2>Pickup</h2>
-                    <p>John F.Kennedy International Airport</p>
+                    <h2 class="timeline__title">Pickup</h2>
+                    <p class="timeline__desc">
+                      John F.Kennedy International Airport
+                    </p>
                   </div>
                   <a class="timeline__button">
-                    <img src="./assets/img/icons/pencil.svg" alt="" />
+                    <img
+                      class="timeline__icon"
+                      src="./assets/img/icons/pencil.svg"
+                      alt="pencil"
+                    />
                   </a>
                 </div>
-                <div class="timeline__item destiny">
+
+                <div class="timeline__item timeline__item--destiny">
                   <div>
-                    <h2>Destination</h2>
-                    <p>
+                    <h2 class="timeline__title">Destination</h2>
+                    <p class="timeline__desc">
                       36 W 38th Street New York <br />
                       NY 10018
                     </p>
                   </div>
                   <a class="timeline__button">
-                    <img src="./assets/img/icons/pencil.svg" alt="" />
+                    <img
+                      class="timeline__icon"
+                      src="./assets/img/icons/pencil.svg"
+                      alt="pencil"
+                    />
                   </a>
                 </div>
               </div>
@@ -134,41 +146,63 @@
           </div>
         </div>
 
-        <div class="plans__simulation">
-          <div class="simulation__form">
-            <input type="text" name="from" id="from" placeholder="From" />
-            <input type="text" name="to" id="to" placeholder="To" />
+        <div class="simulation-route">
+          <div class="simulation-form">
+            <input
+              class="simulation-form__input"
+              type="text"
+              name="from"
+              placeholder="From"
+            />
+            <input
+              class="simulation-form__input"
+              type="text"
+              name="to"
+              placeholder="To"
+            />
           </div>
 
-          <div class="simulation__sidebar"></div>
+          <div class="simulation-route__separator"></div>
 
-          <div class="simulation__transports">
-            <div class="simulation__transport simulation__taxi">
-              <div>
-                <img src="./assets/img/icons/taxi.svg" alt="" />
+          <div class="simulation-transports">
+            <div class="simulation-transport">
+              <div
+                class="simulation-transport__icon simulation-transport__icon--taxi"
+              >
+                <img src="./assets/img/icons/taxi.svg" alt="taxi" />
               </div>
-              <span>taxi</span>
+              <span class="simulation-transport__price">$65-$105</span>
+              <span class="simulation-transport__name">taxi</span>
             </div>
 
-            <div class="simulation__transport simulation__subway">
-              <div>
-                <img src="./assets/img/icons/subway.svg" alt="" />
+            <div class="simulation-transport">
+              <div
+                class="simulation-transport__icon simulation-transport__icon--subway"
+              >
+                <img src="./assets/img/icons/subway.svg" alt="subway" />
               </div>
-              <span>subway</span>
+              <span class="simulation-transport__price">$20-$30</span>
+              <span class="simulation-transport__name">subway</span>
             </div>
 
-            <div class="simulation__transport simulation__subway">
-              <div>
-                <img src="./assets/img/icons/taxi.svg" alt="" />
+            <div class="simulation-transport">
+              <div
+                class="simulation-transport__icon simulation-transport__icon--uber"
+              >
+                <img src="./assets/img/icons/taxi.svg" alt="taxi" />
               </div>
-              <span>uber</span>
+              <span class="simulation-transport__price">$45-$65</span>
+              <span class="simulation-transport__name">uber</span>
             </div>
 
-            <div class="simulation__transport simulation__subway">
-              <div>
-                <img src="./assets/img/icons/taxi.svg" alt="" />
+            <div class="simulation-transport">
+              <div
+                class="simulation-transport__icon simulation-transport__icon--taxi"
+              >
+                <img src="./assets/img/icons/taxi.svg" alt="taxi" />
               </div>
-              <span>uber</span>
+              <span class="simulation-transport__price">$45-$65</span>
+              <span class="simulation-transport__name">uber</span>
             </div>
           </div>
         </div>
